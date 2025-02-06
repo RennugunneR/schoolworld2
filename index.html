@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame Now is the time</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity camera="active: true" look-controls wasd-controls position="0 1.6 30" width="30" height="2"data-aframe-default-camera></a-entity>
+      <a-box color="white" depth="30" height="0.1" width="30" src="#floor"></a-box>
+      <a-box color="white" depth="0.5" height="34" width="30" src="#floor" position="0 0 -15"></a-box>
+      <a-box color="white" depth="30" height="34" width="0.5" src="#floor" position="15 0 0"></a-box>
+      <a-box color="white" depth="30" height="34" width="0.5" src="#floor" position="-15 0 0"></a-box>
+      <a-box color="white" depth="0.5" height="14" width="30" src="#floor" position="0 10 15"></a-box>
+      <a-box color="white" depth="0.5" height="6" width="14" src="#floor" position="-8 0 15"></a-box>
+      <a-box color="white" depth="0.5" height="6" width="14" src="#floor" position="8 0 15"></a-box>
+      <a-box color="white" depth="30" height="0.1" width="30" src="#floor" position="0 17 0"></a-box>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="200" height="200" color="#7BC8A4" src="#grass"></a-plane>
+      <a-torus color="gray" radius="80" radius-tubular="20" rotation="-90 0 0" src="#mount"></a-torus>
+      <a-sky color="white" src="#sky"></a-sky>
+
+      <a-assets>
+        <img id="sky" src="skye.jpg">
+        <img id="grass" src="gress.jpg">
+        <img id="mount" src="mount.jpg">
+        <img id="mount" src="mount.jpg">
+        <img id="floor" src="floor.jpg">
+        
+      </a-assets>
+    </a-scene>
+  </body>
+</html>
